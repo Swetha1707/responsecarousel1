@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider{
+    overflow: hidden;
+    width: 70%;
+    margin: 30px auto;
+    background-color: rgba(212, 130, 22, 0.959);
+}
+.slider input{
+    display: none;
+}
+.slider figure{
+    display: flex;
+    width: 500%;
+    margin: 0;
+    left: 0;
+}
+.slider figure img{
+    width: 20%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    transition: 0.15s;
+   mix-blend-mode:darken;
+}
+.navigationbtn{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.manualbtn{
+    border: 3px solid rgb(9, 66, 80);
+    padding: 5px;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+.manualbtn:hover{
+    background-color: rgb(3, 3, 3);
+}
+#radiobtn1:checked ~.first{
+   margin-left: 0%; 
+}
+#radiobtn2:checked ~.first{
+    margin-left: -20%;
+}
+#radiobtn3:checked ~.first{
+    margin-left: -40%;
+}
+#radiobtn4:checked ~.first{
+    margin-left: -60%;
+}
+#radiobtn5:checked ~.first{
+    margin-left: -80%;
+}
